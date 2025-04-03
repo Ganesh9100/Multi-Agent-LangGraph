@@ -24,7 +24,7 @@ class PlannerAgent:
         self.llm = Ollama(model=model_name)
         self.system_prompt = ("""You are an AI agent responsible for selecting the most appropriate tools based on given descriptions. Analyze the descriptions carefully and determine which tools best match the requirements. Provide your response in strightly in the following format only.
         <JSON_output_format>
-        {{"tools"}}: ["tool_name1", "tool_name2"],
+        {{"tools"}}: ["tool_name1", "tool_name2","tool_name3",t"tool_name4"],
         {{"reasoning"}}: "Explain why the selected tools are the best fit for the given descriptions. How do you use the given context obtained from each selected tool to complete task from user? Ensure that your reasoning is clear, concise, and directly related to the descriptions provided.'
         </JSON_output_format>
         Here should be the end of your output. Do not include additonal information.                     
